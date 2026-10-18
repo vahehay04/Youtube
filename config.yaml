@@ -1,0 +1,87 @@
+# ─────────────────────────────────────────────────────────────
+#  Настройки канала. Меняйте здесь — код трогать не нужно.
+# ─────────────────────────────────────────────────────────────
+
+channel:
+  # Язык песен, названий и описаний: "en" (английский) или "ru" (русский)
+  language: en
+  # Возраст зрителей (влияет на сложность текстов)
+  audience_age: "2-5"
+  # Название серии, добавляется в описание роликов
+  series_name: "Pip & Friends"
+  # Категория YouTube: 10 = Music, 27 = Education, 1 = Film & Animation
+  category_id: "10"
+  # public / unlisted / private. Пока Google не прошёл аудит вашего
+  # API-проекта, YouTube всё равно сделает загрузки приватными.
+  privacy: public
+
+# Оригинальные персонажи канала. Описание вставляется в КАЖДЫЙ запрос
+# к генератору картинок, чтобы персонажи выглядели одинаково.
+characters:
+  - name: Pip
+    look: >-
+      a small round orange fox cub with big sparkly brown eyes, cream-colored
+      belly and tail tip, wearing a short sky-blue knitted scarf
+  - name: Lulu
+    look: >-
+      a soft lavender bunny with very long floppy ears, rosy cheeks and
+      bright yellow rubber boots
+  - name: Bo
+    look: >-
+      a chubby mint-green baby turtle with a shiny dome shell with light
+      hexagon pattern and a small red baseball cap worn backwards
+
+# Единый визуальный стиль всех роликов
+visual_style: >-
+  cute 3D clay-style children's cartoon, soft pastel colors, rounded shapes,
+  gentle warm lighting, simple uncluttered background, friendly and safe,
+  high detail, no text, no letters, no logos
+
+# Темы чередуются, чтобы ролики не повторялись. Каждая песня
+# чему-то учит — это важно для монетизации детского контента.
+topics:
+  - counting from 1 to 5 with objects
+  - colors of everyday things
+  - animal sounds on the farm
+  - shapes around us (circle, square, triangle, star)
+  - brushing teeth and morning routine
+  - washing hands before eating
+  - fruits and vegetables
+  - vehicles and the sounds they make
+  - weather (sun, rain, wind, snow)
+  - feelings (happy, sad, sleepy, surprised) and being kind
+  - big and small, up and down (opposites)
+  - body parts (head, shoulders, hands, feet)
+  - sharing toys with friends
+  - bedtime and saying goodnight
+  - sea animals
+  - letters A, B, C with words that start with them
+  - days of the week
+  - helping clean up toys
+
+song:
+  # Длина песни в секундах (Shorts — до 3 минут, оптимально 40–60 с)
+  target_seconds: 50
+  # Сколько сцен (картинок) в ролике
+  scenes: 5
+  # Музыкальный стиль для ElevenLabs
+  music_style: >-
+    cheerful children's nursery song, bright clear friendly female vocal,
+    ukulele, glockenspiel, light hand claps, bouncy rhythm, 110 bpm
+
+models:
+  # Модель для текстов песен (OpenAI)
+  text: gpt-4.1-mini
+  # Модель для картинок (OpenAI)
+  image: gpt-image-1
+  # Качество картинок: low / medium / high
+  image_quality: medium
+  # Модель музыки ElevenLabs
+  music: music_v1
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  # Крупная подпись на каждой сцене («RED», «3», «Moo!») — помогает учиться
+  show_captions: true

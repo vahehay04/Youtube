@@ -1,0 +1,45 @@
+name: Draw characters (run once)
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Перерисовать всех заново"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: state
+  cancel-in-progress: false
+
+jobs:
+  characters:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Draw reference pictures
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m agent.make_characters ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+
+      - name: Save pictures
+        run: |
+          git config user.name "shorts-agent"
+          git config user.email "shorts-agent@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || git commit -m "assets: character references"
+          git pull --rebase -q && git push -q
