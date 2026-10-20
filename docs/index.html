@@ -4,18 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>shorts-agent</title>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; background: #fff; }
-  a { color: #1a5fd0; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <span class="name">shorts-agent</span>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+
 <h1>shorts-agent</h1>
 <p>shorts-agent is a private tool used by the owner of a single YouTube channel to upload
-their own short children's song videos to that channel through the YouTube Data API.</p>
-<p>The tool is not offered to the public. It only requests the
-<code>youtube.upload</code> permission and is used only with the owner's own Google account.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
+their own short children's song videos to that channel.</p>
 
+<div class="notice">
+  <strong>This application uses YouTube API Services.</strong><br>
+  By using shorts-agent you agree to be bound by the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+  See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</div>
+
+<h2>How it works</h2>
+<ol>
+  <li>A draft video is prepared and sent to the channel owner for review.</li>
+  <li>The channel owner manually approves or rejects each draft.</li>
+  <li>Only approved videos are uploaded to the owner's own channel with the
+      YouTube Data API (<code>videos.insert</code>, scope <code>youtube.upload</code>),
+      marked as "Made for Kids" and as containing synthetic media.</li>
+</ol>
+
+<h2>Who can use it</h2>
+<p>The tool is not offered to the public. It is used only by the channel owner with their
+own Google account. It does not read or store any YouTube data, viewer data or comments.</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> ·
+  <a href="terms.html">Terms of Service</a> ·
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+</footer>
 </body>
 </html>
