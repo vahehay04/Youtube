@@ -79,3 +79,36 @@ def read_offset() -> int:
 def write_offset(offset: int) -> None:
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     OFFSET_FILE.write_text(str(offset))
+
+
+# ── HTTP with retries (servers of AI services are sometimes overloaded) ──
+
+RETRY_STATUS = {408, 409, 425, 429, 500, 502, 503, 504, 529}
+RETRY_WAITS = [20, 45, 90, 180, 300]  # ~10 minutes in total
+
+
+def post_retry(url: str, **kwargs):
+    """requests.post that waits and retries on overload / network errors."""
+    import time
+
+    import requests
+
+    last = None
+    for attempt, wait in enumerate([0] + RETRY_WAITS):
+        if wait:
+            log(f"   сервис занят, повтор через {wait} с (попытка {attempt + 1})")
+            time.sleep(wait)
+        try:
+            last = requests.post(url, **kwargs)
+        except (requests.ConnectionError, requests.Timeout) as e:
+            last = e
+            continue
+        if last.status_code not in RETRY_STATUS:
+            return last
+        # A 429 caused by an empty balance will not fix itself
+        body = last.text.lower()
+        if ("quota" in body and "exceeded" in body) or "insufficient" in body:
+            return last
+    if isinstance(last, Exception):
+        raise last
+    return last

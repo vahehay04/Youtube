@@ -6,7 +6,7 @@ import random
 
 import requests
 
-from .common import env, log
+from .common import env, log, post_retry
 
 LANG_NAMES = {"en": "English", "ru": "Russian"}
 
@@ -77,7 +77,7 @@ def write_song(cfg: dict, history: list[dict]) -> dict:
     )
 
     log(f"✍️  Пишу песню на тему: {topic}")
-    resp = requests.post(
+    resp = post_retry(
         "https://api.openai.com/v1/chat/completions",
         headers={"Authorization": f"Bearer {env('OPENAI_API_KEY')}"},
         json={

@@ -12,7 +12,7 @@ from pathlib import Path
 
 import requests
 
-from .common import CHAR_REF_DIR, env, log
+from .common import CHAR_REF_DIR, env, log, post_retry
 
 SIZE = "1024x1536"  # portrait, cropped to 9:16 later
 POSE_DIR = CHAR_REF_DIR / "poses"
@@ -68,7 +68,7 @@ def draw_character_sheet(cfg: dict, character: dict, out_path: Path) -> Path:
         f"standing, front three-quarter view, plain light background, centered. "
         f"The character: {character['name']} is {character['look']}. No text."
     )
-    resp = requests.post(
+    resp = post_retry(
         "https://api.openai.com/v1/images/generations", headers=_headers(), timeout=300,
         json={"model": cfg["models"]["image"], "prompt": prompt, "size": "1024x1024",
               "quality": "high", "n": 1},
@@ -85,7 +85,7 @@ def draw_pose(cfg: dict, character: dict, pose: str, out_path: Path) -> Path:
         "on a fully transparent background. No shadow, no ground, no text."
     )
     ref = ref_path(character["name"])
-    resp = requests.post(
+    resp = post_retry(
         "https://api.openai.com/v1/images/edits", headers=_headers(), timeout=300,
         data={"model": cfg["models"]["image"], "prompt": prompt, "size": "1024x1536",
               "quality": "high", "background": "transparent", "output_format": "png", "n": "1"},
@@ -108,7 +108,7 @@ def draw(cfg: dict, section: dict, out_path: Path, layered: bool) -> Path:
             "or sand) so characters can stand there. Calm space in the upper third. "
             "No text or letters anywhere."
         )
-        resp = requests.post(
+        resp = post_retry(
             "https://api.openai.com/v1/images/generations", headers=_headers(), timeout=300,
             json={"model": cfg["models"]["image"], "prompt": prompt, "size": SIZE,
                   "quality": cfg["models"]["image_quality"], "n": 1},
@@ -126,14 +126,14 @@ def draw(cfg: dict, section: dict, out_path: Path, layered: bool) -> Path:
     )
     refs = [ref_path(c["name"]) for c in cast if ref_path(c["name"]).exists()]
     if refs:
-        resp = requests.post(
+        resp = post_retry(
             "https://api.openai.com/v1/images/edits", headers=_headers(), timeout=300,
             data={"model": cfg["models"]["image"], "prompt": prompt, "size": SIZE,
                   "quality": cfg["models"]["image_quality"], "n": "1"},
             files=[("image[]", (p.name, p.read_bytes(), "image/png")) for p in refs],
         )
     else:
-        resp = requests.post(
+        resp = post_retry(
             "https://api.openai.com/v1/images/generations", headers=_headers(), timeout=300,
             json={"model": cfg["models"]["image"], "prompt": prompt, "size": SIZE,
                   "quality": cfg["models"]["image_quality"], "n": 1},

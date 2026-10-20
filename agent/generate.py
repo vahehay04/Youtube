@@ -45,8 +45,8 @@ def make_one(cfg: dict, history: list[dict]) -> dict:
         layered = images.poses_ready(cfg)
         if cfg.get("animation", {}).get("enabled") and not layered:
             log("ℹ️  Позы персонажей не найдены — запустите «Draw characters». Пока рисую без анимации.")
+        audio = music.compose(cfg, song, work / "song.mp3")  # first: no wasted pictures if it fails
         pics = images.draw_scenes(cfg, song, work, layered)
-        audio = music.compose(cfg, song, work / "song.mp3")
         mp4 = video.build(cfg, song, pics, audio, work / f"{item_id}.mp4", ROOT, layered)
 
         lyrics_preview = "\n".join(song["sections"][0]["lines"][:2])

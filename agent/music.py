@@ -5,7 +5,7 @@ from pathlib import Path
 
 import requests
 
-from .common import env, log
+from .common import env, log, post_retry
 
 API_URL = "https://api.elevenlabs.io/v1/music"
 
@@ -29,7 +29,7 @@ def compose(cfg: dict, song: dict, out_path: Path) -> Path:
         ],
     }
     log("🎶 Генерирую музыку (ElevenLabs)…")
-    resp = requests.post(
+    resp = post_retry(
         API_URL,
         params={"output_format": "mp3_44100_128"},
         headers={"xi-api-key": env("ELEVENLABS_API_KEY"), "Content-Type": "application/json"},
