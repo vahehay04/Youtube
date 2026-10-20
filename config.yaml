@@ -8,7 +8,7 @@ channel:
   # Возраст зрителей (влияет на сложность текстов)
   audience_age: "2-5"
   # Название серии, добавляется в описание роликов
-  series_name: "Pip & Friends"
+  series_name: "Bouncy Meadow — Kids Songs with Pip, Lulu & Bo"
   # Категория YouTube: 10 = Music, 27 = Education, 1 = Film & Animation
   category_id: "10"
   # public / unlisted / private. Пока Google не прошёл аудит вашего
