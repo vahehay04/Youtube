@@ -40,10 +40,13 @@ Return JSON with this exact shape:
       "seconds": 10,
       "lines": ["2-4 short sung lines, max 8 words each"],
       "caption": "1-3 BIG words shown on screen that reinforce the lesson, e.g. a number, color or animal sound",
-      "scene": "what the picture shows: which characters, what they do, where; concrete and visual, in English"
+      "cast": [{{"name": "one of our characters", "pose": "one of: {poses}"}}],
+      "scene": "the place and the objects that teach the lesson (e.g. 'a sunny farm with a red barn, a cow and three yellow chicks'), concrete and visual, in English; do NOT describe our characters here"
     }}
   ]
 }}
+"cast" has 1-3 of our characters for that section, with a pose that fits the lyrics
+(use "dancing" or "jumping" in the chorus, "waving" in the intro/outro).
 The sum of "seconds" must be about {seconds}. Each section at least 6 seconds.
 Repeat the chorus at least twice so kids can sing along."""
 
@@ -70,6 +73,7 @@ def write_song(cfg: dict, history: list[dict]) -> dict:
         scenes=song_cfg["scenes"],
         characters=chars,
         history=prev,
+        poses=", ".join(cfg.get("animation", {}).get("poses", ["standing"])),
     )
 
     log(f"✍️  Пишу песню на тему: {topic}")
@@ -90,12 +94,31 @@ def write_song(cfg: dict, history: list[dict]) -> dict:
     resp.raise_for_status()
     song = json.loads(resp.json()["choices"][0]["message"]["content"])
     song["topic"] = topic
-    normalize(song, song_cfg["target_seconds"])
+    normalize(song, song_cfg["target_seconds"], cfg)
     log(f"🎵 «{song['title']}» — {len(song['sections'])} частей")
     return song
 
 
-def normalize(song: dict, target_seconds: int) -> None:
+def _clean_cast(cast, cfg: dict, idx: int) -> list[dict]:
+    names = {c["name"].lower(): c["name"] for c in cfg["characters"]}
+    poses = cfg.get("animation", {}).get("poses", ["standing"])
+    out, seen = [], set()
+    for item in cast if isinstance(cast, list) else []:
+        if not isinstance(item, dict):
+            continue
+        name = names.get(str(item.get("name", "")).strip().lower())
+        if not name or name in seen:
+            continue
+        pose = str(item.get("pose", "")).strip().lower()
+        out.append({"name": name, "pose": pose if pose in poses else poses[0]})
+        seen.add(name)
+    if not out:  # fallback: rotate through characters
+        c = cfg["characters"][idx % len(cfg["characters"])]["name"]
+        out = [{"name": c, "pose": poses[idx % len(poses)]}]
+    return out[:3]
+
+
+def normalize(song: dict, target_seconds: int, cfg: dict | None = None) -> None:
     """Make section durations sane and add up to the target length."""
     sections = [s for s in song.get("sections", []) if s.get("lines")]
     if not sections:
@@ -106,6 +129,9 @@ def normalize(song: dict, target_seconds: int) -> None:
         s["seconds"] = round(max(6.0, min(sec, 30.0)), 1)
         s["lines"] = [str(line)[:200] for line in s["lines"]][:8]
         s["caption"] = str(s.get("caption", ""))[:24]
+    if cfg:
+        for i, s in enumerate(sections):
+            s["cast"] = _clean_cast(s.get("cast"), cfg, i)
     song["sections"] = sections
     song["title"] = str(song.get("title", "Song"))[:60].strip()
     song["tags"] = [str(t)[:30] for t in song.get("tags", [])][:12]

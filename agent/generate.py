@@ -42,9 +42,12 @@ def make_one(cfg: dict, history: list[dict]) -> dict:
     item_id = _new_id()
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp)
-        pics = images.draw_scenes(cfg, song, work)
+        layered = images.poses_ready(cfg)
+        if cfg.get("animation", {}).get("enabled") and not layered:
+            log("ℹ️  Позы персонажей не найдены — запустите «Draw characters». Пока рисую без анимации.")
+        pics = images.draw_scenes(cfg, song, work, layered)
         audio = music.compose(cfg, song, work / "song.mp3")
-        mp4 = video.build(cfg, song, pics, audio, work / f"{item_id}.mp4", ROOT)
+        mp4 = video.build(cfg, song, pics, audio, work / f"{item_id}.mp4", ROOT, layered)
 
         lyrics_preview = "\n".join(song["sections"][0]["lines"][:2])
         caption = (
