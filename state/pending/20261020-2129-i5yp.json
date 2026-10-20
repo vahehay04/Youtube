@@ -1,0 +1,145 @@
+{
+  "id": "20261020-2129-i5yp",
+  "created": "2026-10-20T21:33:45+00:00",
+  "topic": "feelings (happy, sad, sleepy, surprised) and being kind",
+  "title": "Feelings and Kindness with Pip, Lulu, and Bo",
+  "tags": [
+    "feelings",
+    "kindness",
+    "toddler song",
+    "emotions",
+    "happy",
+    "sad",
+    "sleepy",
+    "surprised",
+    "fox cub",
+    "bunny",
+    "turtle",
+    "early learning"
+  ],
+  "yt_description": "This sweet song helps toddlers recognize feelings like happy, sad, sleepy, and surprised. It also teaches the joy of being kind to friends.\n\n🎵 Feelings and Kindness with Pip, Lulu, and Bo\n\nHello friends, let's sing today\nFeelings show in every way\n\nHappy Pip is jumping high\nLulu smiles, her ears fly by\nBo feels sleepy, time for rest\nKindness helps us all feel best\n\nFeelings come, feelings go\nTell your friends, let kindness show\nHappy, sad, or surprised too\nBeing kind is what we do\n\nSad Lulu needs a hug\nBo is surprised by a bug\nPip is happy, claps his paws\nKindness spreads without a pause\n\nFeelings come, feelings go\nTell your friends, let kindness show\nHappy, sad, or surprised too\nBeing kind is what we do\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #feelings #kindness #toddlersong",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 6.0,
+      "lines": [
+        "Hello friends, let's sing today",
+        "Feelings show in every way"
+      ],
+      "caption": "HELLO FEELINGS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "A bright green meadow with colorful flowers and a blue sky"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Happy Pip is jumping high",
+        "Lulu smiles, her ears fly by",
+        "Bo feels sleepy, time for rest",
+        "Kindness helps us all feel best"
+      ],
+      "caption": "HAPPY SLEEPY KIND",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "Sunny park with a big tree, a comfy rock, and flowers"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Feelings come, feelings go",
+        "Tell your friends, let kindness show",
+        "Happy, sad, or surprised too",
+        "Being kind is what we do"
+      ],
+      "caption": "KINDNESS SMILES FEELINGS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "Colorful playground with slides, swings, and smiling sun"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 10.0,
+      "lines": [
+        "Sad Lulu needs a hug",
+        "Bo is surprised by a bug",
+        "Pip is happy, claps his paws",
+        "Kindness spreads without a pause"
+      ],
+      "caption": "HUG SURPRISES KINDNESS",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "standing"
+        },
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        }
+      ],
+      "scene": "Flower garden with butterflies, a small bug, and soft grass"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Feelings come, feelings go",
+        "Tell your friends, let kindness show",
+        "Happy, sad, or surprised too",
+        "Being kind is what we do"
+      ],
+      "caption": "KINDNESS SMILES FEELINGS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "Bright playground with colorful balls and a smiling rainbow"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMVatfeOSnoMzkjS4jW03219Jj5O08AAh2mAAI3YsFKLjipWI3LWpk9BA",
+  "telegram_message_id": 21
+}
