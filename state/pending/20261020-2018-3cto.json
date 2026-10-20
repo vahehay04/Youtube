@@ -1,0 +1,75 @@
+{
+  "id": "20261020-2018-3cto",
+  "created": "2026-10-20T20:22:48+00:00",
+  "topic": "sea animals",
+  "title": "Sea Friends Song with Pip, Lulu, and Bo",
+  "tags": [
+    "sea animals",
+    "toddler song",
+    "kids music",
+    "animal sounds",
+    "early learning",
+    "bath time song",
+    "Pip the fox",
+    "Lulu the bunny",
+    "Bo the turtle",
+    "preschool",
+    "sea creatures",
+    "sing along"
+  ],
+  "yt_description": "Join Pip, Lulu, and Bo as they explore fun sea animals! This gentle song teaches toddlers to recognize simple sea creatures and their sounds, encouraging early learning and joyful singing.\n\n🎵 Sea Friends Song with Pip, Lulu, and Bo\n\nHello friends, let's sing today\nMeet the sea animals, hooray!\n\nFish swim fast, swish swish swish\nCrabs walk sideways, click and click\n\nSwim with friends beneath the sea\nPip, Lulu, Bo, and me!\n\nSea stars sparkle, bright and round\nDolphins jump up, make a sound!\n\nSea animals say goodbye\nSing with us till next time, bye!\n\nPip & Friends\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #seaanimals #toddlersong #kidsmusic",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 6.5,
+      "lines": [
+        "Hello friends, let's sing today",
+        "Meet the sea animals, hooray!"
+      ],
+      "caption": "SEA FRIENDS",
+      "scene": "Pip, Lulu, and Bo stand on a sunny beach, waving to the camera with gentle waves in the background"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 10.9,
+      "lines": [
+        "Fish swim fast, swish swish swish",
+        "Crabs walk sideways, click and click"
+      ],
+      "caption": "FISH CRAB",
+      "scene": "Pip points to colorful fish swimming, Lulu giggles near a red crab on the sandy shore"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.9,
+      "lines": [
+        "Swim with friends beneath the sea",
+        "Pip, Lulu, Bo, and me!"
+      ],
+      "caption": "SWIM FRIENDS",
+      "scene": "Bo happily swims in shallow water, laughing as Pip and Lulu watch from the shore"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 10.9,
+      "lines": [
+        "Sea stars sparkle, bright and round",
+        "Dolphins jump up, make a sound!"
+      ],
+      "caption": "STAR DOLPHIN",
+      "scene": "Lulu spots starfish on rocks, Bo pretends to jump like a dolphin with Pip clapping"
+    },
+    {
+      "name": "Outro",
+      "seconds": 10.9,
+      "lines": [
+        "Sea animals say goodbye",
+        "Sing with us till next time, bye!"
+      ],
+      "caption": "BYE BYE SEA",
+      "scene": "Pip, Lulu, and Bo wave goodbye from the beach as the sun gently sets over the ocean"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMHatfNmOMnve7O9HI6skF6ygmdnV0AAt2lAAI3YsFKhTUwTrFR2xY9BA",
+  "telegram_message_id": 7
+}
