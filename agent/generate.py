@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import os
 import random
 import re
 import string
@@ -77,6 +78,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--count", type=int, default=1)
     args = parser.parse_args()
+    if not os.environ.get("TELEGRAM_BOT_TOKEN"):
+        log("Секреты ещё не настроены — пропускаю.")
+        return
 
     cfg = load_config()
     history = load_history()

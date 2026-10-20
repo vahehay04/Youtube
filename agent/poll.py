@@ -5,6 +5,7 @@ Usage: python -m agent.poll
 from __future__ import annotations
 
 import html
+import os
 import tempfile
 import traceback
 from datetime import datetime, timezone
@@ -59,6 +60,9 @@ def _handle(cfg: dict, history: list[dict], cq: dict) -> None:
 
 
 def main() -> None:
+    if not os.environ.get("TELEGRAM_BOT_TOKEN"):
+        log("Секреты ещё не настроены — пропускаю.")
+        return
     cfg = load_config()
     history = load_history()
     offset = read_offset()
