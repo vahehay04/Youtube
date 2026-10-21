@@ -13,7 +13,7 @@ from pathlib import Path
 
 from . import telegram, youtube
 from .common import (PENDING_DIR, delete_pending, load_config, load_history, load_pending, log,
-                     read_offset, save_history, write_offset)
+                     save_history, write_offset)
 
 
 def _set_status(history: list[dict], item_id: str, **fields) -> None:
@@ -65,17 +65,10 @@ def main() -> None:
         return
     cfg = load_config()
     history = load_history()
-    offset = read_offset()
     log("Telegram: " + telegram.diagnostics())
-    updates = telegram.get_updates(offset)
-    if not updates and offset:
-        # Self-heal: if the saved position is ahead of the bot's real updates
-        # (bot/token changed, Telegram reset numbering), read from the start.
-        unread = telegram.get_updates(None)
-        if unread:
-            log(f"⚠️  Сохранённая позиция {offset} не совпадает с обновлениями бота "
-                f"({unread[0]['update_id']}…{unread[-1]['update_id']}) — читаю с начала")
-            updates, offset = unread, 0
+    # Read WITHOUT an offset: this never discards anything. Updates are confirmed
+    # (deleted on Telegram's side) only after they have been handled, below.
+    updates = telegram.get_updates(None)
     pending = sorted(p.stem for p in PENDING_DIR.glob("*.json"))
     log(f"Новых событий в Telegram: {len(updates)}; роликов в очереди: {len(pending)} {pending}")
     for upd in updates:
@@ -84,7 +77,6 @@ def main() -> None:
             log(f"   кнопка {cq.get('data')} из чата {cq.get('message', {}).get('chat', {}).get('id')}")
 
     for upd in updates:
-        offset = upd["update_id"] + 1 if not offset else max(offset, upd["update_id"] + 1)
         cq = upd.get("callback_query")
         if cq:
             try:
@@ -100,7 +92,10 @@ def main() -> None:
             chat_id = upd["message"]["chat"]["id"]
             log(f"Получен /start из чата {chat_id}")
 
-    write_offset(offset)
+    if updates:
+        last = max(u["update_id"] for u in updates)
+        telegram.get_updates(last + 1)  # confirm handled updates
+        write_offset(last + 1)  # kept for reference only
     save_history(history)
 
 
