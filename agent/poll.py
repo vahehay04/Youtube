@@ -66,7 +66,16 @@ def main() -> None:
     cfg = load_config()
     history = load_history()
     offset = read_offset()
+    log("Telegram: " + telegram.diagnostics())
     updates = telegram.get_updates(offset)
+    if not updates and offset:
+        # Self-heal: if the saved position is ahead of the bot's real updates
+        # (bot/token changed, Telegram reset numbering), read from the start.
+        unread = telegram.get_updates(None)
+        if unread:
+            log(f"⚠️  Сохранённая позиция {offset} не совпадает с обновлениями бота "
+                f"({unread[0]['update_id']}…{unread[-1]['update_id']}) — читаю с начала")
+            updates, offset = unread, 0
     pending = sorted(p.stem for p in PENDING_DIR.glob("*.json"))
     log(f"Новых событий в Telegram: {len(updates)}; роликов в очереди: {len(pending)} {pending}")
     for upd in updates:
@@ -75,7 +84,7 @@ def main() -> None:
             log(f"   кнопка {cq.get('data')} из чата {cq.get('message', {}).get('chat', {}).get('id')}")
 
     for upd in updates:
-        offset = max(offset, upd["update_id"] + 1)
+        offset = upd["update_id"] + 1 if not offset else max(offset, upd["update_id"] + 1)
         cq = upd.get("callback_query")
         if cq:
             try:

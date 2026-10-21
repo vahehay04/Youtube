@@ -48,9 +48,18 @@ def send_for_approval(video: Path, item_id: str, caption: str) -> dict:
         )
 
 
-def get_updates(offset: int) -> list[dict]:
-    return _call("getUpdates", json={"offset": offset, "timeout": 0,
-                                     "allowed_updates": ["callback_query", "message"]})
+def get_updates(offset: int | None) -> list[dict]:
+    body = {"timeout": 0, "allowed_updates": ["callback_query", "message"]}
+    if offset:
+        body["offset"] = offset
+    return _call("getUpdates", json=body)
+
+
+def diagnostics() -> str:
+    me = _call("getMe", json={})
+    hook = _call("getWebhookInfo", json={})
+    return (f"бот @{me.get('username')}, webhook: {hook.get('url') or 'нет'}, "
+            f"ожидающих обновлений по данным Telegram: {hook.get('pending_update_count')}")
 
 
 def answer_callback(callback_id: str, text: str) -> None:
