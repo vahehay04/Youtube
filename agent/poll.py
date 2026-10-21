@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import telegram, youtube
-from .common import (delete_pending, load_config, load_history, load_pending, log,
+from .common import (PENDING_DIR, delete_pending, load_config, load_history, load_pending, log,
                      read_offset, save_history, write_offset)
 
 
@@ -67,7 +67,12 @@ def main() -> None:
     history = load_history()
     offset = read_offset()
     updates = telegram.get_updates(offset)
-    log(f"Новых событий в Telegram: {len(updates)}")
+    pending = sorted(p.stem for p in PENDING_DIR.glob("*.json"))
+    log(f"Новых событий в Telegram: {len(updates)}; роликов в очереди: {len(pending)} {pending}")
+    for upd in updates:
+        cq = upd.get("callback_query")
+        if cq:
+            log(f"   кнопка {cq.get('data')} из чата {cq.get('message', {}).get('chat', {}).get('id')}")
 
     for upd in updates:
         offset = max(offset, upd["update_id"] + 1)

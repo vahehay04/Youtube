@@ -2,8 +2,9 @@ name: Publish approved
 
 on:
   schedule:
-    # Каждый час проверяет нажатые кнопки в Telegram
-    - cron: "17 * * * *"
+    # Проверяет нажатые кнопки в Telegram 4 раза в час.
+    # GitHub иногда пропускает запуски по расписанию, поэтому чаще = надёжнее.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -43,4 +44,4 @@ jobs:
           git config user.email "shorts-agent@users.noreply.github.com"
           git add state
           git diff --cached --quiet || git commit -m "state: approvals processed"
-          git pull --rebase -q && git push -q || true
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
