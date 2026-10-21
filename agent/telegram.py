@@ -13,10 +13,16 @@ def _url(method: str) -> str:
     return f"https://api.telegram.org/bot{env('TELEGRAM_BOT_TOKEN')}/{method}"
 
 
+class Conflict(RuntimeError):
+    """Another process is reading this bot's updates at the same moment."""
+
+
 def _call(method: str, **kwargs) -> dict:
     resp = requests.post(_url(method), timeout=120, **kwargs)
     data = resp.json()
     if not data.get("ok"):
+        if data.get("error_code") == 409:
+            raise Conflict(data.get("description", "conflict"))
         raise RuntimeError(f"Telegram {method}: {data}")
     return data["result"]
 
@@ -29,11 +35,24 @@ def send_message(text: str) -> dict:
     return _call("sendMessage", json={"chat_id": chat_id(), "text": text, "parse_mode": "HTML"})
 
 
-def send_for_approval(video: Path, item_id: str, caption: str) -> dict:
-    keyboard = {"inline_keyboard": [[
+def _keyboard(item_id: str) -> dict:
+    return {"inline_keyboard": [[
         {"text": "✅ Опубликовать", "callback_data": f"ok:{item_id}"},
         {"text": "❌ Отклонить", "callback_data": f"no:{item_id}"},
     ]]}
+
+
+def restore_buttons(message_id: int, item_id: str, caption: str) -> None:
+    try:
+        _call("editMessageCaption", json={
+            "chat_id": chat_id(), "message_id": message_id, "caption": caption[:1024],
+            "parse_mode": "HTML", "reply_markup": _keyboard(item_id)})
+    except RuntimeError:
+        pass
+
+
+def send_for_approval(video: Path, item_id: str, caption: str) -> dict:
+    keyboard = _keyboard(item_id)
     with open(video, "rb") as f:
         return _call(
             "sendVideo",
@@ -48,8 +67,10 @@ def send_for_approval(video: Path, item_id: str, caption: str) -> dict:
         )
 
 
-def get_updates(offset: int | None) -> list[dict]:
-    body = {"timeout": 0, "allowed_updates": ["callback_query", "message"]}
+def get_updates(offset: int | None, timeout: int = 0) -> list[dict]:
+    """Never pass an offset that did not come from updates received in THIS run:
+    Telegram deletes every update with a smaller id."""
+    body = {"timeout": timeout, "allowed_updates": ["callback_query", "message"]}
     if offset:
         body["offset"] = offset
     return _call("getUpdates", json=body)

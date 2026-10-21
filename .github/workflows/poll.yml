@@ -2,8 +2,8 @@ name: Publish approved
 
 on:
   schedule:
-    # Проверяет нажатые кнопки в Telegram 4 раза в час.
-    # GitHub иногда пропускает запуски по расписанию, поэтому чаще = надёжнее.
+    # Запасная проверка кнопок (основная — «Wait for approval», запускается
+    # сразу после отправки ролика). GitHub иногда пропускает эти запуски.
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v6
         with:

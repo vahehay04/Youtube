@@ -16,7 +16,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import images, music, telegram, video
-from .common import ROOT, load_config, load_history, log, save_history, save_pending
+from .common import (ROOT, commit_state, load_config, load_history, log, migrate_history,
+                     save_item, save_pending, sync_state)
 from .songwriter import write_song
 
 
@@ -69,10 +70,13 @@ def make_one(cfg: dict, history: list[dict]) -> dict:
         "telegram_file_id": msg["video"]["file_id"],
         "telegram_message_id": msg["message_id"],
     }
+    entry = {"id": item_id, "title": song["title"], "topic": song["topic"],
+             "status": "pending", "created": item["created"]}
+    sync_state()
     save_pending(item)
-    history.append({"id": item_id, "title": song["title"], "topic": song["topic"],
-                    "status": "pending", "created": item["created"]})
-    save_history(history)
+    save_item(entry)
+    history.append(entry)
+    commit_state(f"state: new video for approval ({item_id})")
     log(f"📨 Отправлено на одобрение в Telegram ({item_id})")
     return item
 
@@ -86,6 +90,7 @@ def main() -> None:
         return
 
     cfg = load_config()
+    migrate_history()
     history = load_history()
     failures = 0
     for n in range(args.count):

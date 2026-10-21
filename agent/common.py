@@ -11,7 +11,8 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 STATE_DIR = ROOT / "state"
 PENDING_DIR = STATE_DIR / "pending"
-HISTORY_FILE = STATE_DIR / "history.json"
+HISTORY_FILE = STATE_DIR / "history.json"  # old format, migrated to ITEMS_DIR
+ITEMS_DIR = STATE_DIR / "items"  # one file per video: no git conflicts between jobs
 OFFSET_FILE = STATE_DIR / "telegram_offset.txt"
 CHAR_REF_DIR = ROOT / "assets" / "characters"
 
@@ -35,14 +36,63 @@ def log(msg: str) -> None:
 # ── History of published / generated songs (to avoid repeats) ──
 
 def load_history() -> list[dict]:
+    items: dict[str, dict] = {}
     if HISTORY_FILE.exists():
-        return json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-    return []
+        for h in json.loads(HISTORY_FILE.read_text(encoding="utf-8")):
+            items[h["id"]] = h
+    for f in ITEMS_DIR.glob("*.json"):
+        h = json.loads(f.read_text(encoding="utf-8"))
+        items[h["id"]] = h
+    return sorted(items.values(), key=lambda h: h.get("created", ""))
 
 
-def save_history(items: list[dict]) -> None:
-    STATE_DIR.mkdir(parents=True, exist_ok=True)
-    HISTORY_FILE.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
+def save_item(item: dict) -> None:
+    """Save ONE history entry (only the changed one, never the whole list)."""
+    ITEMS_DIR.mkdir(parents=True, exist_ok=True)
+    (ITEMS_DIR / f"{item['id']}.json").write_text(
+        json.dumps(item, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def migrate_history() -> None:
+    if HISTORY_FILE.exists():
+        for h in json.loads(HISTORY_FILE.read_text(encoding="utf-8")):
+            if not (ITEMS_DIR / f"{h['id']}.json").exists():
+                save_item(h)
+        HISTORY_FILE.unlink()
+    if OFFSET_FILE.exists():
+        OFFSET_FILE.unlink()  # no longer used: a stale offset made Telegram drop presses
+
+
+# ── Syncing state with the repository (when running in GitHub Actions) ──
+
+def _git(*args: str) -> bool:
+    import subprocess
+    res = subprocess.run(["git", "-c", "user.name=shorts-agent",
+                          "-c", "user.email=shorts-agent@users.noreply.github.com", *args],
+                         cwd=ROOT, capture_output=True, text=True)
+    return res.returncode == 0
+
+
+def sync_state() -> None:
+    """Pull the latest queue/history (other jobs may have changed it)."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        _git("pull", "--rebase", "-q", "--autostash")
+
+
+def commit_state(message: str) -> None:
+    """Commit and push state right away, so other jobs see it immediately."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    import time
+    _git("add", "-A", "state")
+    if _git("diff", "--cached", "--quiet"):
+        return
+    _git("commit", "-q", "-m", message)
+    for _ in range(4):
+        if _git("pull", "--rebase", "-q") and _git("push", "-q"):
+            return
+        time.sleep(5)
+    log("⚠️  Не удалось сохранить состояние в репозиторий")
 
 
 # ── Pending videos waiting for approval ──

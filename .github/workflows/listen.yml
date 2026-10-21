@@ -1,0 +1,43 @@
+name: Wait for approval
+
+# Started automatically after a new video is sent to Telegram.
+# Waits up to 2 hours and reacts to the buttons within seconds;
+# stops as soon as the queue is empty.
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Сколько минут ждать нажатия"
+        default: "120"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: listen
+  cancel-in-progress: false
+
+jobs:
+  listen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 140
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Wait for button presses and publish
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python -m agent.poll --listen "${{ github.event.inputs.minutes || '120' }}"
