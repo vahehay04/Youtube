@@ -1,0 +1,137 @@
+{
+  "id": "20261021-1858-w8t0",
+  "created": "2026-10-21T19:03:59+00:00",
+  "topic": "big and small, up and down (opposites)",
+  "title": "Big and Small, Up and Down with Pip, Lulu, and Bo",
+  "tags": [
+    "big and small",
+    "up and down",
+    "opposites",
+    "toddler song",
+    "early learning",
+    "size concepts",
+    "position words",
+    "kids music",
+    "preschool",
+    "Pip the fox",
+    "Lulu the bunny",
+    "Bo the turtle"
+  ],
+  "yt_description": "Join Pip, Lulu, and Bo to learn about opposites: big and small, up and down. This gentle song helps toddlers recognize size and position through fun and repetition.\n\n🎵 Big and Small, Up and Down with Pip, Lulu, and Bo\n\nHello, friends! Let's have some fun,\nBig and small, we’ll learn as one!\n\nPip is small and Lulu’s tall,\nBig and small, we see them all.\n\nBig and small, up and down,\nLook around, see and sound!\nUp is high and down is low,\nFriends together watch it grow!\n\nBo climbs up, then slides down,\nUp and down, fun all around!\n\nBig and small, up and down,\nLook around, see and sound!\nUp is high and down is low,\nFriends together watch it grow!\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #bigandsmall #upanddown #opposites",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 7.0,
+      "lines": [
+        "Hello, friends! Let's have some fun,",
+        "Big and small, we’ll learn as one!"
+      ],
+      "caption": "BIG, SMALL",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny garden with tall sunflowers and tiny ladybugs"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 8.0,
+      "lines": [
+        "Pip is small and Lulu’s tall,",
+        "Big and small, we see them all."
+      ],
+      "caption": "SMALL, TALL",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a playground with a big slide and a small sandbox"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Big and small, up and down,",
+        "Look around, see and sound!",
+        "Up is high and down is low,",
+        "Friends together watch it grow!"
+      ],
+      "caption": "BIG, SMALL, UP, DOWN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful park with a tall tree and a low bush"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 8.0,
+      "lines": [
+        "Bo climbs up, then slides down,",
+        "Up and down, fun all around!"
+      ],
+      "caption": "UP, DOWN",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a gentle hill next to a small pond"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 12.0,
+      "lines": [
+        "Big and small, up and down,",
+        "Look around, see and sound!",
+        "Up is high and down is low,",
+        "Friends together watch it grow!"
+      ],
+      "caption": "BIG, SMALL, UP, DOWN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a bright meadow with flowers reaching up and small stones on the ground"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMYatkMn9h59wh3mha_-JOWNt83wecAAsm1AAI3YslKScGGmaoQ1nc9BA",
+  "telegram_message_id": 24
+}
