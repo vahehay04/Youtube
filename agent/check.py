@@ -63,6 +63,30 @@ def check_openai(cfg: dict) -> None:
         add(False, "OpenAI баланс", f"ошибка {r.status_code}: {r.text[:200]}")
 
 
+def check_cloudflare(cfg: dict) -> None:
+    acc, tok = get("CLOUDFLARE_ACCOUNT_ID"), get("CLOUDFLARE_API_TOKEN")
+    if not acc or not tok:
+        add(False, "Cloudflare", "не заданы CLOUDFLARE_ACCOUNT_ID или CLOUDFLARE_API_TOKEN")
+        return
+    base = f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/"
+    h = {"Authorization": f"Bearer {tok}"}
+    r = requests.post(base + cfg["models"]["text"], headers=h, timeout=60,
+                      json={"messages": [{"role": "user", "content": "Say OK"}], "max_tokens": 5})
+    if r.status_code == 200 and r.json().get("success"):
+        add(True, "Cloudflare тексты", cfg["models"]["text"].split("/")[-1])
+    else:
+        hint = {401: "неверный API-токен", 403: "у токена нет права Workers AI",
+                404: "неверный Account ID"}.get(r.status_code, "")
+        add(False, "Cloudflare тексты", f"ошибка {r.status_code} {hint}: {r.text[:200]}")
+        return
+    from . import ai
+    try:
+        img = ai.image(cfg, "a cute small cartoon sun, simple, soft colors", 1024, 1024)
+        add(len(img) > 1000, "Cloudflare картинки", cfg["models"]["image"].split("/")[-1])
+    except Exception as e:  # noqa: BLE001
+        add(False, "Cloudflare картинки", str(e)[:250])
+
+
 def check_elevenlabs() -> None:
     key = get("ELEVENLABS_API_KEY")
     if not key:
@@ -106,7 +130,9 @@ def check_youtube() -> None:
 
 def main() -> None:
     cfg = load_config()
-    for fn in (check_telegram, lambda: check_openai(cfg), check_elevenlabs, check_youtube):
+    from . import ai
+    text_check = (lambda: check_cloudflare(cfg)) if ai.provider(cfg) == "cloudflare" else (lambda: check_openai(cfg))
+    for fn in (check_telegram, text_check, check_elevenlabs, check_youtube):
         try:
             fn()
         except Exception as e:  # noqa: BLE001

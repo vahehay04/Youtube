@@ -71,11 +71,18 @@ song:
     ukulele, glockenspiel, light hand claps, bouncy rhythm, 110 bpm
 
 models:
-  # Модель для текстов песен (OpenAI)
-  text: gpt-4.1-mini
-  # Модель для картинок (OpenAI)
-  image: gpt-image-1
-  # Качество картинок: low / medium / high
+  # Где генерировать тексты и картинки:
+  #   cloudflare — Cloudflare Workers AI, бесплатно в пределах дневного лимита
+  #   openai     — OpenAI (платно); тогда text: gpt-4.1-mini, image: gpt-image-1
+  provider: cloudflare
+  # Модель для текстов песен
+  text: "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+  # Модель для картинок сцен. FLUX.1 schnell рисует квадрат 1024x1024.
+  # Можно попробовать "@cf/black-forest-labs/flux-2-klein-4b" — вертикальные картинки.
+  image: "@cf/black-forest-labs/flux-1-schnell"
+  # Шагов генерации картинки (для schnell максимум 8 — лучше качество)
+  image_steps: 8
+  # Только для OpenAI: качество картинок low / medium / high
   image_quality: medium
   # Модель музыки ElevenLabs
   music: music_v1

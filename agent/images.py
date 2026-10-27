@@ -12,6 +12,7 @@ from pathlib import Path
 
 import requests
 
+from . import ai
 from .common import CHAR_REF_DIR, env, log, post_retry
 
 SIZE = "1024x1536"  # portrait, cropped to 9:16 later
@@ -100,20 +101,19 @@ def draw(cfg: dict, section: dict, out_path: Path, layered: bool) -> Path:
     if layered:
         # Background only: characters are added later as animated layers
         names = ", ".join(c["name"] for c in cfg["characters"])
+        square = ai.provider(cfg) == "cloudflare" and "flux-2" not in cfg["models"]["image"]
         prompt = (
-            f"{cfg['visual_style']}. Vertical children's illustration, background scene: "
-            f"{section['scene']}. Do NOT draw the main characters ({names}) and no other "
-            "main heroes: they will be added later. Background and props only. "
-            "Keep the lower half of the picture open and uncluttered (soft ground, grass, floor "
-            "or sand) so characters can stand there. Calm space in the upper third. "
-            "No text or letters anywhere."
+            f"{cfg['visual_style']}. Children's illustration, background scene: "
+            f"{section['scene']}. No characters, no people, no main heroes ({names}): "
+            "only the place and the objects. Background and props only. "
+            "The lower half is open and uncluttered (soft ground, grass, floor or sand). "
+            + ("All important objects are in the CENTRAL vertical strip of the picture, "
+               "edges are simple. " if square else "Calm space in the upper third. ")
+            + "No text or letters anywhere."
         )
-        resp = post_retry(
-            "https://api.openai.com/v1/images/generations", headers=_headers(), timeout=300,
-            json={"model": cfg["models"]["image"], "prompt": prompt, "size": SIZE,
-                  "quality": cfg["models"]["image_quality"], "n": 1},
-        )
-        return _save(resp, out_path)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(ai.image(cfg, prompt, 1024, 1536))
+        return out_path
 
     # Characters drawn into the picture (used when poses are not ready)
     cast = [_character(cfg, c["name"]) for c in section.get("cast", [])]
@@ -124,6 +124,9 @@ def draw(cfg: dict, section: dict, out_path: Path, layered: bool) -> Path:
         f"Characters in the scene: {who} Keep the characters exactly as in the reference images. "
         "Leave some calm space in the upper third of the picture. No text or letters anywhere."
     )
+    if ai.provider(cfg) != "openai":
+        out_path.write_bytes(ai.image(cfg, prompt, 1024, 1536))
+        return out_path
     refs = [ref_path(c["name"]) for c in cast if ref_path(c["name"]).exists()]
     if refs:
         resp = post_retry(

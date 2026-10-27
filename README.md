@@ -31,7 +31,19 @@ YouTube не монетизирует «бессмысленный» шабло�
 3. Откройте в браузере `https://api.telegram.org/bot<ВАШ_ТОКЕН>/getUpdates`
    и найдите `"chat":{"id": 123456789` — это число и есть `TELEGRAM_CHAT_ID`.
 
-### Шаг 2. OpenAI (тексты песен и картинки)
+### Шаг 2. Cloudflare Workers AI (тексты песен и картинки — бесплатно)
+
+1. Зарегистрируйтесь на https://dash.cloudflare.com (бесплатный тариф).
+2. **Account ID**: на главной странице панели справа (или в адресе страницы после `dash.cloudflare.com/`) —
+   это `CLOUDFLARE_ACCOUNT_ID`.
+3. **My Profile → API Tokens → Create Token → шаблон «Workers AI»** → Continue → Create Token —
+   это `CLOUDFLARE_API_TOKEN`.
+4. Бесплатно — 10 000 «нейронов» в день; 2 ролика в день тратят около 1 000.
+
+### Шаг 2б. OpenAI (по желанию, платно)
+
+Нужен, только если в `config.yaml` указано `provider: openai`, или чтобы перерисовать персонажей и их позы.
+
 
 1. Зайдите на https://platform.openai.com → **Billing** → пополните на $10–20.
 2. **API keys** → *Create new secret key* — это `OPENAI_API_KEY`.
@@ -78,7 +90,9 @@ YouTube не монетизирует «бессмысленный» шабло�
 |---|---|
 | `TELEGRAM_BOT_TOKEN` | шаг 1 |
 | `TELEGRAM_CHAT_ID` | шаг 1 |
-| `OPENAI_API_KEY` | шаг 2 |
+| `CLOUDFLARE_ACCOUNT_ID` | шаг 2 |
+| `CLOUDFLARE_API_TOKEN` | шаг 2 |
+| `OPENAI_API_KEY` | шаг 2б (необязательно) |
 | `ELEVENLABS_API_KEY` | шаг 3 |
 | `YOUTUBE_CLIENT_ID` | шаг 4 |
 | `YOUTUBE_CLIENT_SECRET` | шаг 4 |
@@ -114,7 +128,7 @@ YouTube не монетизирует «бессмысленный» шабло�
 ## Сколько это стоит (примерно)
 
 - **GitHub Actions** — бесплатно (≈1 200 из 2 000 бесплатных минут в месяц для приватного репозитория).
-- **OpenAI** — ≈$0.3–0.5 за ролик (5 картинок + текст) → ≈$20–30 в месяц при 2 роликах в день.
+- **Cloudflare Workers AI** — бесплатно (тексты и картинки сцен).
 - **ElevenLabs** — по вашему тарифу; ≈60 песен по ~50 секунд в месяц.
 
 ## Важно про правила YouTube

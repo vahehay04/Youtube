@@ -4,9 +4,8 @@ from __future__ import annotations
 import json
 import random
 
-import requests
-
-from .common import env, log, post_retry
+from . import ai
+from .common import log
 
 LANG_NAMES = {"en": "English", "ru": "Russian"}
 
@@ -77,22 +76,7 @@ def write_song(cfg: dict, history: list[dict]) -> dict:
     )
 
     log(f"✍️  Пишу песню на тему: {topic}")
-    resp = post_retry(
-        "https://api.openai.com/v1/chat/completions",
-        headers={"Authorization": f"Bearer {env('OPENAI_API_KEY')}"},
-        json={
-            "model": cfg["models"]["text"],
-            "response_format": {"type": "json_object"},
-            "temperature": 0.9,
-            "messages": [
-                {"role": "system", "content": SYSTEM},
-                {"role": "user", "content": prompt},
-            ],
-        },
-        timeout=120,
-    )
-    resp.raise_for_status()
-    song = json.loads(resp.json()["choices"][0]["message"]["content"])
+    song = ai.chat_json(cfg, SYSTEM, prompt)
     song["topic"] = topic
     normalize(song, song_cfg["target_seconds"], cfg)
     log(f"🎵 «{song['title']}» — {len(song['sections'])} частей")
