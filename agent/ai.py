@@ -99,11 +99,13 @@ def image(cfg: dict, prompt: str, width: int = 1024, height: int = 1536) -> byte
                      "steps": (None, str(cfg["models"].get("image_steps", 4)))}
             resp = post_retry(_cf_url(model), headers=_cf_headers(), files=files, timeout=300)
         else:
-            # FLUX.1 schnell: square 1024x1024, max 8 steps
-            resp = post_retry(_cf_url(model), headers=_cf_headers(), timeout=300, json={
-                "prompt": prompt[:2000],
-                "num_steps": min(int(cfg["models"].get("image_steps", 8)), 8),
-            })
+            # FLUX.1 schnell: square 1024x1024, up to 8 steps
+            body = {"prompt": prompt[:2000], "steps": min(int(cfg["models"].get("image_steps", 8)), 8)}
+            resp = post_retry(_cf_url(model), headers=_cf_headers(), timeout=300, json=body)
+            if resp.status_code == 400 and "properties" in resp.text:
+                # the model rejected an optional parameter: send the prompt only
+                resp = post_retry(_cf_url(model), headers=_cf_headers(), timeout=300,
+                                  json={"prompt": body["prompt"]})
         return base64.b64decode(_cf_result(resp)["image"])
 
     resp = post_retry(
