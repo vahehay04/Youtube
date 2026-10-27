@@ -1,0 +1,119 @@
+{
+  "id": "20261027-2044-az1g",
+  "created": "2026-10-27T20:46:44+00:00",
+  "topic": "animal sounds on the farm",
+  "title": "Farm Friends Sounds",
+  "tags": [
+    "farm animals",
+    "animal sounds",
+    "kids songs",
+    "toddler learning",
+    "farm friends",
+    "Pip",
+    "Lulu",
+    "nursery rhymes",
+    "childrens music"
+  ],
+  "yt_description": "Join Pip and friends on the farm to learn animal sounds. This fun song teaches toddlers to recognize and imitate different farm animal sounds. Your little one will love singing along with Pip and Lulu.\n\n🎵 Farm Friends Sounds\n\nHello friends\nLet's go farm\nSee the animals\n\nCow says moo\nPig says oink\nSheep says baa\n\nFarm friends make sounds\nFun on the farm\nSounds all around\n\nFarm friends make sounds\nFun on the farm\nSounds all around\n\nBye friends now\nFarm fun is done\nSee you soon\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #farmanimals #animalsounds #kidssongs",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello friends",
+        "Let's go farm",
+        "See the animals"
+      ],
+      "caption": "FARM",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny farm with a red barn and green grass"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Cow says moo",
+        "Pig says oink",
+        "Sheep says baa"
+      ],
+      "caption": "MOO",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a cow, a pig, and a sheep in a green meadow"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Farm friends make sounds",
+        "Fun on the farm",
+        "Sounds all around"
+      ],
+      "caption": "ANIMAL SOUNDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a group of farm animals making sounds together"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Farm friends make sounds",
+        "Fun on the farm",
+        "Sounds all around"
+      ],
+      "caption": "FARM FUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "jumping"
+        }
+      ],
+      "scene": "a sunny farm with happy animals playing"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye friends now",
+        "Farm fun is done",
+        "See you soon"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny farm with a red barn and green grass"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMoauENtOWpuIUmKetNfPZylH7nzbgAArWpAAIjfghLgHAvB_XrYdY9BA",
+  "telegram_message_id": 40
+}
