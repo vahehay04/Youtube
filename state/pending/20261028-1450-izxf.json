@@ -1,0 +1,130 @@
+{
+  "id": "20261028-1450-izxf",
+  "created": "2026-10-28T14:53:42+00:00",
+  "topic": "bedtime and saying goodnight",
+  "title": "Goodnight Friends",
+  "tags": [
+    "bedtime",
+    "goodnight",
+    "friends",
+    "toddlers",
+    "bedtime routine",
+    "sleepy time",
+    "calm",
+    "soothing",
+    "gentle"
+  ],
+  "yt_description": "This song helps toddlers learn a bedtime routine and how to say goodnight to friends. It's a soothing and gentle way to end the day. Your child will learn to associate bedtime with calm and happy feelings.\n\n🎵 Goodnight Friends\n\nTime for bed\nGoodnight friends\n\nPip is sleepy\nLulu too\n\nGoodnight friends\nSleep tight\n\nGoodnight friends\nSleep tight\n\nGoodnight all\nSleep tight\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #bedtime #goodnight #friends",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Time for bed",
+        "Goodnight friends"
+      ],
+      "caption": "GOODNIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a cozy bedroom with a soft moon shining through the window"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Pip is sleepy",
+        "Lulu too"
+      ],
+      "caption": "SLEEPY",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a bedroom with two beds and a nightlight"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Goodnight friends",
+        "Sleep tight"
+      ],
+      "caption": "SLEEP TIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a starry night sky with three friends waving"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Goodnight friends",
+        "Sleep tight"
+      ],
+      "caption": "SLEEP TIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a starry night sky with three friends waving"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Goodnight all",
+        "Sleep tight"
+      ],
+      "caption": "GOODNIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a cozy bedroom with a soft moon shining through the window"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMpauIMdbBNXaeIBKmeF9zfPFyKo3wAApCqAAKy5RFLX8na2vGUjys9BA",
+  "telegram_message_id": 41
+}
