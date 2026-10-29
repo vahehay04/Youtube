@@ -1,0 +1,118 @@
+{
+  "id": "20261029-1916-u4d4",
+  "created": "2026-10-29T19:20:13+00:00",
+  "topic": "days of the week",
+  "title": "Days of Week Fun",
+  "tags": [
+    "days of week",
+    "toddler learning",
+    "kids song",
+    "preschool education",
+    "weekdays",
+    "fun learning",
+    "children's music",
+    "educational song"
+  ],
+  "yt_description": "Learn the days of the week with Pip and friends. This catchy song teaches toddlers the basic concept of weekdays. Sing along and have fun!\n\n🎵 Days of Week Fun\n\nHello\nFriends\nLet's learn\n\nMonday\nTuesday\nWednesday\n\nDays of week\nFun to learn\nEvery day\n\nThursday\nFriday\nSaturday\n\nDays of week\nFun to learn\nBye for now\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #daysofweek #toddlerlearning #kidssong",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's learn"
+      ],
+      "caption": "WEEKDAYS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a colorful calendar with big letters and numbers"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "caption": "MONDAY",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a big flipchart with days of the week written on it"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Days of week",
+        "Fun to learn",
+        "Every day"
+      ],
+      "caption": "DAYS OF WEEK",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a sunny park with kids playing together"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 9.0,
+      "lines": [
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "caption": "FRIDAY",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a big flipchart with days of the week written on it"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 9.0,
+      "lines": [
+        "Days of week",
+        "Fun to learn",
+        "Bye for now"
+      ],
+      "caption": "WEEKDAYS FUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a colorful calendar with big letters and numbers and confetti"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMrauOcbaPgbI4ZeWe57WPShYSq_9EAAs-oAAKy5RlLlxKZDUv0GfQ9BA",
+  "telegram_message_id": 43
+}
