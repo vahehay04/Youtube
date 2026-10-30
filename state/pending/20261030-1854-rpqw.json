@@ -1,0 +1,132 @@
+{
+  "id": "20261030-1854-rpqw",
+  "created": "2026-10-30T18:57:03+00:00",
+  "topic": "sea animals",
+  "title": "Sea Animal Friends",
+  "tags": [
+    "sea animals",
+    "kids songs",
+    "toddler learning",
+    "marine life",
+    "children's music",
+    "educational songs",
+    "Pip",
+    "Lulu",
+    "Bo",
+    "ocean creatures"
+  ],
+  "yt_description": "Join Pip and friends as they learn about sea animals. This song teaches toddlers to identify and name three common sea creatures. Encourages curiosity and love for marine life.\n\n🎵 Sea Animal Friends\n\nHello\nFriends\nLet's go\n\nTurtle\nSwims slow\nIn the sea\n\nSea animals\nFriends so fine\nLet's learn\n\nSea animals\nFriends so fine\nLet's learn\n\nBye bye\nFriends\nSee you\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #seaanimals #kidssongs #toddlerlearning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's go"
+      ],
+      "caption": "FISH",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny beach with a big blue ocean and a few seagulls flying"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Turtle",
+        "Swims slow",
+        "In the sea"
+      ],
+      "caption": "TURTLE",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a coral reef with a turtle swimming near a school of small fish"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Sea animals",
+        "Friends so fine",
+        "Let's learn"
+      ],
+      "caption": "SEA ANIMALS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a group of sea animals playing together in the ocean"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Sea animals",
+        "Friends so fine",
+        "Let's learn"
+      ],
+      "caption": "SEA ANIMALS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "jumping"
+        },
+        {
+          "name": "Bo",
+          "pose": "jumping"
+        }
+      ],
+      "scene": "a group of sea animals playing together in the ocean"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye bye",
+        "Friends",
+        "See you"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny beach with a big blue ocean and a few seagulls flying"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMtauTofjogpFUXam9RBidvbN3K744AAkywAAJS0ihLEiLWNBZTa509BA",
+  "telegram_message_id": 45
+}
