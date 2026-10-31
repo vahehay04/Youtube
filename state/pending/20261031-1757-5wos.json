@@ -1,0 +1,137 @@
+{
+  "id": "20261031-1757-5wos",
+  "created": "2026-10-31T18:00:19+00:00",
+  "topic": "big and small, up and down (opposites)",
+  "title": "Big and Little Friends",
+  "tags": [
+    "big and small",
+    "up and down",
+    "opposites",
+    "toddler learning",
+    "kids song",
+    "friends",
+    " Pip",
+    "Lulu",
+    "Bo",
+    "education",
+    "nursery rhyme"
+  ],
+  "yt_description": "Learn about big and small, up and down with Pip and friends. This song teaches opposites in a fun way. Perfect for toddlers!\n\n🎵 Big and Little Friends\n\nHello\nFriends are here\nBig and small\n\nPip is small\nLulu is big\nUp high\n\nBig and small\nUp and down\nFriends all around\n\nBig and small\nUp and down\nFriends all around\n\nBye bye\nFriends say bye\nBig and small\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #bigandsmall #upanddown #opposites",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends are here",
+        "Big and small"
+      ],
+      "caption": "BIG",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny playground with a big slide and little swings"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Pip is small",
+        "Lulu is big",
+        "Up high"
+      ],
+      "caption": "UP",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a big tree with a little bird up high and a big bird down low"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Big and small",
+        "Up and down",
+        "Friends all around"
+      ],
+      "caption": "FRIENDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a playground with big and small toys and friends playing together"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Big and small",
+        "Up and down",
+        "Friends all around"
+      ],
+      "caption": "FRIENDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a playground with big and small toys and friends playing together"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye bye",
+        "Friends say bye",
+        "Big and small"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny playground with a big slide and little swings"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMvauYss413ayk3GLYuJKAlxp09ZwwAAiirAAIEojFL2rvDro5MmII9BA",
+  "telegram_message_id": 47
+}
