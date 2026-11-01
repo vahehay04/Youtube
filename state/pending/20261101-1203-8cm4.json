@@ -1,0 +1,126 @@
+{
+  "id": "20261101-1203-8cm4",
+  "created": "2026-11-01T12:06:49+00:00",
+  "topic": "fruits and vegetables",
+  "title": "Fruit Friends",
+  "tags": [
+    "fruits",
+    "vegetables",
+    "healthy eating",
+    "kids song",
+    "toddler learning",
+    "food education",
+    "children's music",
+    "nutrition for kids"
+  ],
+  "yt_description": "In this fun song, your child will learn about different types of fruits and vegetables. They will see colorful pictures and sing along with our friends. This song encourages healthy eating and exploration of new foods.\n\n🎵 Fruit Friends\n\nHello\nFriends\nLet's eat\n\nCarrots\nBroccoli\nAre good\n\nFruits and veggies\nAre fun to eat\nEvery day\n\nFruits and veggies\nAre fun to eat\nEvery day\n\nBye\nFriends\nEat well\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #fruits #vegetables #healthyeating",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's eat"
+      ],
+      "caption": "APPLE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny farm with a big basket of fruits and vegetables"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Carrots",
+        "Broccoli",
+        "Are good"
+      ],
+      "caption": "CARROTS",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a garden with green trees and a variety of vegetables"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Fruits and veggies",
+        "Are fun to eat",
+        "Every day"
+      ],
+      "caption": "FRUITS AND VEGGIES",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful market with many types of fruits and vegetables"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Fruits and veggies",
+        "Are fun to eat",
+        "Every day"
+      ],
+      "caption": "FRUITS AND VEGGIES",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "jumping"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a happy kitchen with a big salad and a fruit salad"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye",
+        "Friends",
+        "Eat well"
+      ],
+      "caption": "EAT WELL",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny farm with a big basket of fruits and vegetables"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMwaucrWSJdbdWUlz7MiAblCSM1y_UAAkqnAAIEojlLfrOIW8bqYJI9BA",
+  "telegram_message_id": 48
+}
