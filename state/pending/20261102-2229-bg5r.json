@@ -1,0 +1,120 @@
+{
+  "id": "20261102-2229-bg5r",
+  "created": "2026-11-02T22:31:56+00:00",
+  "topic": "feelings (happy, sad, sleepy, surprised) and being kind",
+  "title": "Feelings Friends",
+  "tags": [
+    "feelings",
+    "kindness",
+    "emotions",
+    "social skills",
+    "emotional intelligence",
+    "toddler learning",
+    "preschool songs",
+    "children's education",
+    "character development"
+  ],
+  "yt_description": "Learn to recognize and express different feelings like happy, sad, sleepy, and surprised with our friends. This song teaches kindness and empathy towards others. Help your child develop social skills and emotional intelligence.\n\n🎵 Feelings Friends\n\nHello friends\nLet's play\nFeelings today\n\nI'm happy\nI'm sad\nI'm sleepy too\n\nWe're feelings friends\nKind to each other\nEvery single day\n\nI'm surprised\nI'm happy too\nWe care about you\n\nWe're feelings friends\nKind to each other\nEvery single day\nBye friends\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #feelings #kindness #emotions",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello friends",
+        "Let's play",
+        "Feelings today"
+      ],
+      "caption": "HAPPY",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny meadow with colorful flowers and a few fluffy clouds"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "I'm happy",
+        "I'm sad",
+        "I'm sleepy too"
+      ],
+      "caption": "SAD",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a cozy little house with a comfy bed and a few stuffed animals"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "We're feelings friends",
+        "Kind to each other",
+        "Every single day"
+      ],
+      "caption": "KIND",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a big park with a playground and a few kids playing together"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 8.0,
+      "lines": [
+        "I'm surprised",
+        "I'm happy too",
+        "We care about you"
+      ],
+      "caption": "SURPRISED",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a fun circus with a few balloons and a big surprise gift"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 10.0,
+      "lines": [
+        "We're feelings friends",
+        "Kind to each other",
+        "Every single day",
+        "Bye friends"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny meadow with colorful flowers and a few fluffy clouds"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMzaukPXBcFdLTfukgJa6pkGF9v53cAAhK9AAKv-UlLtXwsI7XeQrw9BA",
+  "telegram_message_id": 51
+}
