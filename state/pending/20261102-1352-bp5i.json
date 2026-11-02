@@ -1,0 +1,128 @@
+{
+  "id": "20261102-1352-bp5i",
+  "created": "2026-11-02T13:54:51+00:00",
+  "topic": "vehicles and the sounds they make",
+  "title": "Vehicle Sounds Fun",
+  "tags": [
+    "vehicles",
+    "sounds",
+    "toddler learning",
+    "kids song",
+    "transportation",
+    "education",
+    "children's music",
+    "Pip",
+    "Lulu",
+    "Bo"
+  ],
+  "yt_description": "Learn the different sounds that vehicles make with Pip and friends. This song teaches toddlers to recognize and imitate the sounds of cars, trucks, and airplanes. Encourage your child to sing along and make the sounds with Pip.\n\n🎵 Vehicle Sounds Fun\n\nHello\nI'm Pip\nLet's play\n\nCar goes vroom\nTruck goes beep\nAirplane flies\n\nVehicles make sounds\nEverywhere we go\nFun to hear\n\nVehicles make sounds\nEverywhere we go\nFun to hear\n\nBye bye\nFriends play\nSee you soon\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #vehicles #sounds #toddlerlearning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "I'm Pip",
+        "Let's play"
+      ],
+      "caption": "HELLO",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny road with a few trees and a blue sky"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Car goes vroom",
+        "Truck goes beep",
+        "Airplane flies"
+      ],
+      "caption": "VROOM",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a city street with a car, truck, and airplane flying overhead"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Vehicles make sounds",
+        "Everywhere we go",
+        "Fun to hear"
+      ],
+      "caption": "SOUNDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a busy highway with many vehicles and a bright sun"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Vehicles make sounds",
+        "Everywhere we go",
+        "Fun to hear"
+      ],
+      "caption": "FUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "jumping"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a playground with toy vehicles and happy children playing"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye bye",
+        "Friends play",
+        "See you soon"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny road with a few trees and a blue sky"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAMyauiWK4mdpnQ6uXlEKhtCJv8EUXEAAhevAAKv-UFLtSWzLRBDa9E9BA",
+  "telegram_message_id": 50
+}
