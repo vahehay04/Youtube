@@ -1,0 +1,125 @@
+{
+  "id": "20261103-2018-3aes",
+  "created": "2026-11-03T20:22:18+00:00",
+  "topic": "weather (sun, rain, wind, snow)",
+  "title": "Weather Friends",
+  "tags": [
+    "weather",
+    "sun",
+    "rain",
+    "wind",
+    "snow",
+    "kids song",
+    "toddler learning",
+    "children's music",
+    "education",
+    "fun"
+  ],
+  "yt_description": "Learn about different types of weather with Pip and friends. This song teaches toddlers about sun, rain, wind, and snow. Sing along and have fun!\n\n🎵 Weather Friends\n\nHello\nI'm Pip\nLet's play\n\nSun is shining\nRain is falling\nWind is blowing\n\nWeather, weather\nEvery day\nDifferent sky\n\nSnow is falling\nWinter is here\nLet's play\n\nWeather, weather\nEvery day\nDifferent sky\nBye bye\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #weather #sun #rain",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "I'm Pip",
+        "Let's play"
+      ],
+      "caption": "SUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny meadow with fluffy white clouds"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Sun is shining",
+        "Rain is falling",
+        "Wind is blowing"
+      ],
+      "caption": "RAIN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a rainy city street with umbrellas and raindrops"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 8.0,
+      "lines": [
+        "Weather, weather",
+        "Every day",
+        "Different sky"
+      ],
+      "caption": "WEATHER",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful background with sun, rain, wind, and snow symbols"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 9.0,
+      "lines": [
+        "Snow is falling",
+        "Winter is here",
+        "Let's play"
+      ],
+      "caption": "SNOW",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        },
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a snowy forest with snowflakes and snowmen"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 11.0,
+      "lines": [
+        "Weather, weather",
+        "Every day",
+        "Different sky",
+        "Bye bye"
+      ],
+      "caption": "WEATHER",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny meadow with fluffy white clouds and all three friends"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAM1aupCehY7E5vavViBO5l0CuBa2aUAAtqwAALdolBLieo8cdt9jfA9BA",
+  "telegram_message_id": 53
+}
