@@ -1,0 +1,122 @@
+{
+  "id": "20261104-2049-synf",
+  "created": "2026-11-04T20:53:53+00:00",
+  "topic": "brushing teeth and morning routine",
+  "title": "Brushing Teeth Fun",
+  "tags": [
+    "brushing teeth",
+    "morning routine",
+    "oral hygiene",
+    "kids song",
+    "toddler learning",
+    "good habits",
+    "morning fun",
+    "teeth brushing"
+  ],
+  "yt_description": "Learn the importance of brushing teeth with Pip and friends. This song teaches toddlers a simple morning routine and good oral hygiene habits. Encourage your child to sing along and practice brushing their teeth every morning.\n\n🎵 Brushing Teeth Fun\n\nWake up\nMorning time\nLet's shine\n\nBrush teeth\nUp and down\nClean and bright\n\nBrushing teeth\nEvery morning\nFun and clean\n\nBrushing teeth\nEvery morning\nFun and clean\n\nAll done\nMorning fun\nBye for now\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #brushingteeth #morningroutine #oralhygiene",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Wake up",
+        "Morning time",
+        "Let's shine"
+      ],
+      "caption": "WAKE UP",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny bedroom with a toothbrush and toothpaste on a table"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Brush teeth",
+        "Up and down",
+        "Clean and bright"
+      ],
+      "caption": "BRUSH",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a bathroom with a sink and a toothbrush holder"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Brushing teeth",
+        "Every morning",
+        "Fun and clean"
+      ],
+      "caption": "CLEAN TEETH",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful bathroom with toothbrushes and toothpaste"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Brushing teeth",
+        "Every morning",
+        "Fun and clean"
+      ],
+      "caption": "SMILE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        },
+        {
+          "name": "Bo",
+          "pose": "jumping"
+        }
+      ],
+      "scene": "a happy bathroom with big smiles and clean teeth"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "All done",
+        "Morning fun",
+        "Bye for now"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny bedroom with a big window and a morning sun"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAM3auubYVTvDYlTCJhw5_VLPED26VQAAqqnAALdomBLiM4TfzFzlxg9BA",
+  "telegram_message_id": 55
+}
