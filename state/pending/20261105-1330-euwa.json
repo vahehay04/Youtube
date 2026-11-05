@@ -1,0 +1,121 @@
+{
+  "id": "20261105-1330-euwa",
+  "created": "2026-11-05T13:33:34+00:00",
+  "topic": "colors of everyday things",
+  "title": "Colors Around Us",
+  "tags": [
+    "colors",
+    "everyday objects",
+    "learning",
+    "toddler song",
+    "kids education",
+    "Pip",
+    "Lulu",
+    "Bo",
+    "children's music",
+    "nursery rhyme"
+  ],
+  "yt_description": "In this song, your little one will learn to identify and associate colors with everyday objects. Pip and friends will take them on a fun adventure to discover the world of colors. This catchy tune is designed to be simple, repetitive, and easy to follow.\n\n🎵 Colors Around Us\n\nHello\nFriends\nLet's play\n\nYellow sun\nBlue sky\nGreen grass\n\nColors all\nAround us\nFun to see\n\nOrange ball\nPurple flower\nPink book\n\nColors all\nAround us\nFun to see\nBye friends\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #colors #everydayobjects #learning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's play"
+      ],
+      "caption": "RED",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a bright red apple on a green table"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Yellow sun",
+        "Blue sky",
+        "Green grass"
+      ],
+      "caption": "YELLOW BLUE GREEN",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a sunny meadow with a yellow sun, blue sky, and green grass"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Colors all",
+        "Around us",
+        "Fun to see"
+      ],
+      "caption": "COLORS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful rainbow with balls and toys"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 9.0,
+      "lines": [
+        "Orange ball",
+        "Purple flower",
+        "Pink book"
+      ],
+      "caption": "ORANGE PURPLE PINK",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a playground with an orange ball, purple flower, and pink book"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 9.0,
+      "lines": [
+        "Colors all",
+        "Around us",
+        "Fun to see",
+        "Bye friends"
+      ],
+      "caption": "COLORS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a colorful room with toys and a goodbye sign"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAM4auyFrR1KPPL55GWzIbgwtLVLUJgAArOvAALTH2lLZ-UMQ90x6149BA",
+  "telegram_message_id": 56
+}
