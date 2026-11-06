@@ -1,0 +1,121 @@
+{
+  "id": "20261106-2006-b13l",
+  "created": "2026-11-06T20:09:53+00:00",
+  "topic": "shapes around us (circle, square, triangle, star)",
+  "title": "Shape Friends",
+  "tags": [
+    "shapes",
+    "circle",
+    "square",
+    "triangle",
+    "star",
+    "learning",
+    "kids",
+    "education",
+    "toddler",
+    "preschool"
+  ],
+  "yt_description": "Learn about basic shapes with Pip and friends. This song teaches children to recognize and identify circles, squares, triangles, and stars. Encourage your child to point out shapes in their daily life.\n\n🎵 Shape Friends\n\nHello\nFriends\nLet's play\n\nCircle\nRound\nBall\n\nShapes\nAll around\nFun to find\n\nSquare\nTriangle\nStar\n\nShapes\nAll around\nFun to find\nBye\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #shapes #circle #square",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's play"
+      ],
+      "caption": "SHAPES",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a colorful playground with shape blocks"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Circle",
+        "Round",
+        "Ball"
+      ],
+      "caption": "CIRCLE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a ball and a frisbee on the playground"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Shapes",
+        "All around",
+        "Fun to find"
+      ],
+      "caption": "SHAPES FUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a city street with shape signs and buildings"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 9.0,
+      "lines": [
+        "Square",
+        "Triangle",
+        "Star"
+      ],
+      "caption": "SQUARE TRIANGLE STAR",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a construction site with shape blocks and signs"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 9.0,
+      "lines": [
+        "Shapes",
+        "All around",
+        "Fun to find",
+        "Bye"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "the colorful playground with shape blocks at sunset"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAAM7au40ETAVeXBE04-7jJKWFCLJmK0AAsSvAAJAoXBLN7NQaOeO8QABPQQ",
+  "telegram_message_id": 59
+}
