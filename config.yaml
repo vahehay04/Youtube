@@ -11,8 +11,7 @@ channel:
   series_name: "Bouncy Meadow — Kids Songs with Pip, Lulu & Bo"
   # Категория YouTube: 10 = Music, 27 = Education, 1 = Film & Animation
   category_id: "10"
-  # public / unlisted / private. Пока Google не прошёл аудит вашего
-  # API-проекта, YouTube всё равно сделает загрузки приватными.
+  # Доступ к загруженным роликам: public / unlisted / private
   privacy: public
 
 # Оригинальные персонажи канала. Описание вставляется в КАЖДЫЙ запрос

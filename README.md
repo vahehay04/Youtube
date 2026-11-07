@@ -76,10 +76,10 @@ YouTube не монетизирует «бессмысленный» шабло�
    ```
    Войдите в аккаунт **с вашим каналом**. Скрипт покажет три значения:
    `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN`.
-7. **Подайте заявку на аудит API**: https://support.google.com/youtube/contact/yt_api_form
-   (*YouTube API Services – Audit and Quota Extension Form*). Пока аудит не пройден,
-   YouTube делает все загруженные через API видео **приватными** — их можно
-   вручную сделать публичными в YouTube Studio.
+7. Аудит API для этого агента не нужен: загрузки через API сразу получают
+   выбранный доступ (`privacy` в `config.yaml`). Форма аудита
+   (https://support.google.com/youtube/contact/yt_api_form) нужна, только если понадобится
+   квота больше стандартных 10 000 единиц в день.
 
 ### Шаг 5. Секреты в GitHub
 
