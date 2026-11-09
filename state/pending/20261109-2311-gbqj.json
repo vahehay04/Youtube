@@ -1,0 +1,108 @@
+{
+  "id": "20261109-2311-gbqj",
+  "created": "2026-11-09T23:14:03+00:00",
+  "topic": "letters A, B, C with words that start with them",
+  "title": "ABC Fun Song",
+  "tags": [
+    "alphabet",
+    "letters",
+    "ABC",
+    "learning",
+    "kids",
+    "education",
+    "Pip",
+    "fun song",
+    "children"
+  ],
+  "yt_description": "Learn letters A, B, and C with Pip. Discover words that start with these letters. A fun and catchy way to introduce the alphabet.\n\n🎵 ABC Fun Song\n\nHello\nI'm Pip\nLet's learn\n\nA is for Apple\nB is for Ball\nC is for Cat\n\nA, B, C\nFun to learn\nWith me\n\nA is for Ant\nB is for Book\nC is for Car\n\nA, B, C\nFun to learn\nWith me\nBye for now\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #alphabet #letters #ABC",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "I'm Pip",
+        "Let's learn"
+      ],
+      "caption": "ABC",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a colorful classroom with alphabet letters on the wall"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "A is for Apple",
+        "B is for Ball",
+        "C is for Cat"
+      ],
+      "caption": "A B C",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a table with an apple, a ball, and a toy cat"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 8.0,
+      "lines": [
+        "A, B, C",
+        "Fun to learn",
+        "With me"
+      ],
+      "caption": "LEARN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a bright and colorful background with moving alphabet letters"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 7.0,
+      "lines": [
+        "A is for Ant",
+        "B is for Book",
+        "C is for Car"
+      ],
+      "caption": "A B C",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a shelf with a toy ant, a book, and a toy car"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 13.0,
+      "lines": [
+        "A, B, C",
+        "Fun to learn",
+        "With me",
+        "Bye for now"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a sunny park with a swings and a slide, and then a waving goodbye"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANDavJTuw_ct9cUp3ZFbcfjyfGe6pcAAui3AAJg85FLgW5pOGAJ-dE9BA",
+  "telegram_message_id": 67
+}
