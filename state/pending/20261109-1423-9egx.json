@@ -1,0 +1,120 @@
+{
+  "id": "20261109-1423-9egx",
+  "created": "2026-11-09T14:27:12+00:00",
+  "topic": "counting from 1 to 5 with objects",
+  "title": "Count to Five",
+  "tags": [
+    "counting",
+    "numbers",
+    "toddlers",
+    "learning",
+    "fun",
+    "education",
+    "kids",
+    "songs",
+    "nursery rhymes",
+    "child development"
+  ],
+  "yt_description": "In this fun song, your child will learn to count from 1 to 5 with everyday objects. Pip and friends will show you how to make learning fun and easy. Encourage your child to sing along and count with us!\n\n🎵 Count to Five\n\nHello\nLet's count\nWith me\n\nOne apple\nTwo balls\nLet's count\n\nCount to five\nIt's easy\nLet's try\n\nThree swings\nFour blocks\nLet's count\n\nCount to five\nIt's easy\nBye bye\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #counting #numbers #toddlers",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Let's count",
+        "With me"
+      ],
+      "caption": "ONE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny table with one big red apple"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "One apple",
+        "Two balls",
+        "Let's count"
+      ],
+      "caption": "TWO",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a green grass field with two bouncing balls"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Count to five",
+        "It's easy",
+        "Let's try"
+      ],
+      "caption": "COUNT TO FIVE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a colorful playground with three swings and four slides"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 9.0,
+      "lines": [
+        "Three swings",
+        "Four blocks",
+        "Let's count"
+      ],
+      "caption": "FOUR",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a building site with four big blocks and five toy trucks"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 9.0,
+      "lines": [
+        "Count to five",
+        "It's easy",
+        "Bye bye"
+      ],
+      "caption": "FIVE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a happy park with five little ducks swimming in a pond"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANAavHYQP4ZkCj1JEXuwpUY3SqBxvAAAlq0AAJg85FLn29mFA4i-Bc9BA",
+  "telegram_message_id": 64
+}
