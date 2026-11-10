@@ -1,0 +1,103 @@
+{
+  "id": "20261110-1348-gtoe",
+  "created": "2026-11-10T13:51:04+00:00",
+  "topic": "bedtime and saying goodnight",
+  "title": "Pip's Goodnight Song",
+  "tags": [
+    "bedtime",
+    "goodnight",
+    "sleep",
+    "routine",
+    "toddler",
+    "preschool",
+    "song",
+    "music",
+    "education",
+    "kids"
+  ],
+  "yt_description": "Teach your child a gentle bedtime routine with Pip. Learn to say goodnight to the sun and the stars. This soothing song helps toddlers wind down and get ready for sleep.\n\n🎵 Pip's Goodnight Song\n\nPip says\ngoodnight sun\n\nStars are\nshining bright\n\nGoodnight\nsleep tight\n\nGoodnight\nsleep tight\n\nPip sleeps\ntight too\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #bedtime #goodnight #sleep",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Pip says",
+        "goodnight sun"
+      ],
+      "caption": "SUN",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a sunny sky with fluffy white clouds"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Stars are",
+        "shining bright"
+      ],
+      "caption": "STARS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "scene": "a dark blue night sky with twinkling stars"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Goodnight",
+        "sleep tight"
+      ],
+      "caption": "GOODNIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "scene": "a cozy bedroom with a comfy bed and a moonlit window"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Goodnight",
+        "sleep tight"
+      ],
+      "caption": "SLEEP TIGHT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        }
+      ],
+      "scene": "a cozy bedroom with a comfy bed and a moonlit window"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Pip sleeps",
+        "tight too"
+      ],
+      "caption": "SLEEP",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "scene": "a cozy bedroom with a sleeping Pip and a few stuffed animals"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANEavMhSNScWGsME7BS_w60VUmiTPgAAgisAAJg85lLnJEetl06se49BA",
+  "telegram_message_id": 68
+}
