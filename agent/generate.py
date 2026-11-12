@@ -15,7 +15,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import images, music, telegram, video
+from . import images, music, studio, telegram, video
 from .common import (ROOT, commit_state, load_config, load_history, log, migrate_history,
                      save_item, save_pending, sync_state)
 from .songwriter import write_song
@@ -43,12 +43,21 @@ def make_one(cfg: dict, history: list[dict]) -> dict:
     item_id = _new_id()
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp)
-        layered = images.poses_ready(cfg)
-        if cfg.get("animation", {}).get("enabled") and not layered:
-            log("ℹ️  Позы персонажей не найдены — запустите «Draw characters». Пока рисую без анимации.")
-        audio = music.compose(cfg, song, work / "song.mp3")  # first: no wasted pictures if it fails
-        pics = images.draw_scenes(cfg, song, work, layered)
-        mp4 = video.build(cfg, song, pics, audio, work / f"{item_id}.mp4", ROOT, layered)
+        audio = music.compose(cfg, song, work / "song.mp3")  # first: no wasted work if it fails
+        mp4 = None
+        if cfg["video"].get("renderer", "studio") == "studio":
+            if studio.available():
+                try:
+                    mp4 = studio.build(cfg, song, audio, work)
+                except Exception as e:  # noqa: BLE001
+                    traceback.print_exc()
+                    log(f"⚠️  Студия не сработала ({str(e)[:200]}) — собираю ролик по-старому")
+            else:
+                log("⚠️  Движок студии не найден (нет секрета STUDIO_TOKEN?) — собираю ролик по-старому")
+        if mp4 is None:
+            layered = images.poses_ready(cfg)
+            pics = images.draw_scenes(cfg, song, work, layered)
+            mp4 = video.build(cfg, song, pics, audio, work / f"{item_id}.mp4", ROOT, layered)
 
         lyrics_preview = "\n".join(song["sections"][0]["lines"][:2])
         caption = (

@@ -87,6 +87,10 @@ models:
   music: music_v1
 
 video:
+  # studio — новый движок (кадры, камера, реквизит, прыжки в такт); classic — старый монтаж из картинок
+  renderer: studio
+  resolution: 1080p
+  studio_fps: 24
   width: 1080
   height: 1920
   fps: 60

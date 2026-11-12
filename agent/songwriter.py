@@ -5,6 +5,7 @@ import json
 import random
 
 from . import ai
+from .studio import PROP_KINDS, SETS
 from .common import log
 
 LANG_NAMES = {"en": "English", "ru": "Russian"}
@@ -40,10 +41,14 @@ Return JSON with this exact shape:
       "lines": ["2-4 short sung lines, max 8 words each"],
       "caption": "1-3 BIG words shown on screen that reinforce the lesson, e.g. a number, color or animal sound",
       "cast": [{{"name": "one of our characters", "pose": "one of: {poses}"}}],
+      "props": [{{"kind": "one of: {props}", "color": "optional: red|orange|yellow|green|blue|purple|pink|brown|white", "n": "optional count 1-5 when counting"}}],
+      "set": "one of: {sets}",
       "scene": "the place and the objects that teach the lesson (e.g. 'a sunny farm with a red barn, a cow and three yellow chicks'), concrete and visual, in English; do NOT describe our characters here"
     }}
   ]
 }}
+"props" are 1-3 objects from the list that are SUNG about in that section (the lesson objects).
+"set" is the place for that section.
 "cast" has 1-3 of our characters for that section, with a pose that fits the lyrics
 (use "dancing" or "jumping" in the chorus, "waving" in the intro/outro).
 The sum of "seconds" must be about {seconds}. Each section at least 6 seconds.
@@ -73,6 +78,7 @@ def write_song(cfg: dict, history: list[dict]) -> dict:
         characters=chars,
         history=prev,
         poses=", ".join(cfg.get("animation", {}).get("poses", ["standing"])),
+        props=", ".join(PROP_KINDS), sets=", ".join(SETS),
     )
 
     log(f"✍️  Пишу песню на тему: {topic}")
