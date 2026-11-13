@@ -1,0 +1,164 @@
+{
+  "id": "20261113-2041-ww6w",
+  "created": "2026-11-13T20:52:17+00:00",
+  "topic": "fruits and vegetables",
+  "title": "Fruit Salad Fun",
+  "tags": [
+    "fruits",
+    "vegetables",
+    "healthy eating",
+    "kids song",
+    "learning",
+    "fun",
+    "education",
+    "toddler",
+    "preschool"
+  ],
+  "yt_description": "Learn about different fruits and vegetables with Pip. This song teaches kids to identify and name basic fruits and veggies in a fun way. Encourage your child to sing along and learn about healthy eating.\n\n🎵 Fruit Salad Fun\n\nHello\nFriends\nLet's eat\n\nCarrot\nIs orange\nAnd sweet\n\nFruit salad\nYummy mix\nEat and smile\n\nFruit salad\nYummy mix\nEat and smile\n\nBye\nFriends\nEat well\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #fruits #vegetables #healthyeating",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's eat"
+      ],
+      "caption": "APPLE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [
+        {
+          "kind": "apple",
+          "color": "red"
+        }
+      ],
+      "set": "picnic"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Carrot",
+        "Is orange",
+        "And sweet"
+      ],
+      "caption": "CARROT",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "carrot",
+          "color": "orange"
+        }
+      ],
+      "set": "farm"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Fruit salad",
+        "Yummy mix",
+        "Eat and smile"
+      ],
+      "caption": "FRUIT SALAD",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "apple",
+          "color": "red"
+        },
+        {
+          "kind": "carrot",
+          "color": "orange"
+        }
+      ],
+      "set": "playground"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Fruit salad",
+        "Yummy mix",
+        "Eat and smile"
+      ],
+      "caption": "FRUIT SALAD",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Lulu",
+          "pose": "jumping"
+        },
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "apple",
+          "color": "red"
+        },
+        {
+          "kind": "carrot",
+          "color": "orange"
+        },
+        {
+          "kind": "banana",
+          "color": "yellow"
+        }
+      ],
+      "set": "playground"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye",
+        "Friends",
+        "Eat well"
+      ],
+      "caption": "EAT WELL",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        },
+        {
+          "name": "Bo",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "home"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANLavd4gb8KNZgZNf7CF2GNRVAd1L0AAj2yAAJ9b8BLTM25DlUK1Dk9BA",
+  "telegram_message_id": 75
+}
