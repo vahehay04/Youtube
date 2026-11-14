@@ -1,0 +1,123 @@
+{
+  "id": "20261114-1232-abb0",
+  "created": "2026-11-14T12:46:51+00:00",
+  "topic": "brushing teeth and morning routine",
+  "title": "Morning Smile Time",
+  "tags": [
+    "morning routine",
+    "brushing teeth",
+    "kids song",
+    "toddler learning",
+    "oral hygiene",
+    "daily routine",
+    "children's music",
+    "education"
+  ],
+  "yt_description": "Learn about morning routine with Pip. Brushing teeth is fun! Pip shows how to start the day with a healthy smile.\n\n🎵 Morning Smile Time\n\nWake up\nMorning sun\nPip is here\n\nBrush teeth\nClean and bright\nEvery day\n\nBrushing teeth\nFun to do\nMorning smile\n\nBrushing teeth\nFun to do\nMorning smile\n\nBye for now\nSee you soon\nPip waves\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #morningroutine #brushingteeth #kidssong",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Wake up",
+        "Morning sun",
+        "Pip is here"
+      ],
+      "caption": "MORNING",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "home"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Brush teeth",
+        "Clean and bright",
+        "Every day"
+      ],
+      "caption": "TOOTHBRUSH",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "toothbrush"
+        }
+      ],
+      "set": "bathroom"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Brushing teeth",
+        "Fun to do",
+        "Morning smile"
+      ],
+      "caption": "SMILE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "toothbrush"
+        }
+      ],
+      "set": "bathroom"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Brushing teeth",
+        "Fun to do",
+        "Morning smile"
+      ],
+      "caption": "SMILE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "toothbrush"
+        }
+      ],
+      "set": "bathroom"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye for now",
+        "See you soon",
+        "Pip waves"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "home"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANMavhYO7d8v63ITxq6SpwXqzbGU0kAAjyjAALNTsBLuG-AK27wM5o9BA",
+  "telegram_message_id": 76
+}
