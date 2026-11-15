@@ -1,0 +1,141 @@
+{
+  "id": "20261115-1259-floy",
+  "created": "2026-11-15T13:14:34+00:00",
+  "topic": "body parts (head, shoulders, hands, feet)",
+  "title": "Body Parts Song",
+  "tags": [
+    "body parts",
+    "kids song",
+    "toddler learning",
+    "preschool education",
+    "children's music",
+    "fun learning",
+    "Pip",
+    "Lulu",
+    "Bo"
+  ],
+  "yt_description": "Learn the basic body parts with Pip and friends. This song teaches young children to identify their head, shoulders, hands, and feet in a fun and engaging way. Sing along and dance with Pip!\n\n🎵 Body Parts Song\n\nHello\nI'm Pip\nLet's play\n\nMy head is up\nShoulders too\nI have hands\n\nHead, shoulders, hands, feet\nI can move\nFeet on the ground\nLet's dance\n\nHead, shoulders, hands, feet\nI can move\nFeet on the ground\nLet's dance\n\nBye bye\nSee you soon\nPip says goodbye\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #bodyparts #kidssong #toddlerlearning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "I'm Pip",
+        "Let's play"
+      ],
+      "caption": "HEAD",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "playground"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "My head is up",
+        "Shoulders too",
+        "I have hands"
+      ],
+      "caption": "HANDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "ball",
+          "color": "red"
+        }
+      ],
+      "set": "playground"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Head, shoulders, hands, feet",
+        "I can move",
+        "Feet on the ground",
+        "Let's dance"
+      ],
+      "caption": "FEET",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "shoes",
+          "color": "blue"
+        }
+      ],
+      "set": "playground"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Head, shoulders, hands, feet",
+        "I can move",
+        "Feet on the ground",
+        "Let's dance"
+      ],
+      "caption": "BODY PARTS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "ball",
+          "color": "red"
+        },
+        {
+          "kind": "blocks",
+          "n": "5"
+        }
+      ],
+      "set": "playground"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye bye",
+        "See you soon",
+        "Pip says goodbye"
+      ],
+      "caption": "GOODBYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        },
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "playground"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANOavmwOtpnxE7HM56uWREO-FDq0SMAAoWyAALNTtBLDLfvEUJVoqU9BA",
+  "telegram_message_id": 78
+}
