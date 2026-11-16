@@ -1,0 +1,123 @@
+{
+  "id": "20261116-2303-exsy",
+  "created": "2026-11-16T23:13:45+00:00",
+  "topic": "days of the week",
+  "title": "Days of Week Fun",
+  "tags": [
+    "days of week",
+    "kids song",
+    "learning",
+    "toddler education",
+    "children's music",
+    "fun",
+    "Pip",
+    "Lulu",
+    "Bo"
+  ],
+  "yt_description": "Learn the days of the week with Pip and friends. This song teaches children the names of the days in a fun and catchy way. Help your child develop their sense of time and routine.\n\n🎵 Days of Week Fun\n\nHello\nFriends\nLet's sing\n\nMonday\nTuesday\nWednesday\n\nDays of week\nFun to learn\nEvery day\n\nThursday\nFriday\nSaturday\n\nDays of week\nFun to learn\nEvery day\nBye friends\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #daysofweek #kidssong #learning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's sing"
+      ],
+      "caption": "HELLO",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "playground"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "caption": "MONDAY",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "number",
+          "n": "1"
+        }
+      ],
+      "set": "farm"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Days of week",
+        "Fun to learn",
+        "Every day"
+      ],
+      "caption": "DAYS",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "dancing"
+        }
+      ],
+      "props": [],
+      "set": "hill"
+    },
+    {
+      "name": "Verse 2",
+      "seconds": 8.0,
+      "lines": [
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "caption": "THURSDAY",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "number",
+          "n": "4"
+        }
+      ],
+      "set": "beach"
+    },
+    {
+      "name": "Chorus and Outro",
+      "seconds": 10.0,
+      "lines": [
+        "Days of week",
+        "Fun to learn",
+        "Every day",
+        "Bye friends"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "playground"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANRavuOKbWDjBDR3P9rqME3DGH11QoAApaxAAJdv9hLFmzYUVP89S89BA",
+  "telegram_message_id": 81
+}
