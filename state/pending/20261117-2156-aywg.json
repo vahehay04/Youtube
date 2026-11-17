@@ -1,0 +1,121 @@
+{
+  "id": "20261117-2156-aywg",
+  "created": "2026-11-17T22:06:36+00:00",
+  "topic": "animal sounds on the farm",
+  "title": "Farm Sounds Fun",
+  "tags": [
+    "farm animals",
+    "animal sounds",
+    "kids songs",
+    "toddler learning",
+    "farm sounds",
+    "fun songs",
+    "children music",
+    "educational songs"
+  ],
+  "yt_description": "Learn animal sounds with Pip on the farm. Recognize and imitate the sounds of farm animals. Simple and fun for little ones.\n\n🎵 Farm Sounds Fun\n\nHello\nFriends\nLet's go\n\nCow says moo\nPig says oink\nSheep says baa\n\nFarm sounds fun\nLet's have fun\nAnimal sounds\n\nFarm sounds fun\nLet's have fun\nAnimal sounds\n\nBye friends\nSee you\nLater\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #farmanimals #animalsounds #kidssongs",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Friends",
+        "Let's go"
+      ],
+      "caption": "FARM",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "farm"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Cow says moo",
+        "Pig says oink",
+        "Sheep says baa"
+      ],
+      "caption": "MOO OINK BAA",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "cow"
+        },
+        {
+          "kind": "pig"
+        },
+        {
+          "kind": "sheep"
+        }
+      ],
+      "set": "farm"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Farm sounds fun",
+        "Let's have fun",
+        "Animal sounds"
+      ],
+      "caption": "ANIMAL SOUNDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        }
+      ],
+      "props": [],
+      "set": "farm"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Farm sounds fun",
+        "Let's have fun",
+        "Animal sounds"
+      ],
+      "caption": "ANIMAL SOUNDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        }
+      ],
+      "props": [],
+      "set": "farm"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye friends",
+        "See you",
+        "Later"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "farm"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANTavzP7J0RjR4GXG1X2RyWVNXNrkYAAoW7AALQEulLOBShxPctk_w9BA",
+  "telegram_message_id": 83
+}
