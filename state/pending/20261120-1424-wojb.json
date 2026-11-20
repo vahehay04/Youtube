@@ -1,0 +1,136 @@
+{
+  "id": "20261120-1424-wojb",
+  "created": "2026-11-20T14:34:37+00:00",
+  "topic": "sea animals",
+  "title": "Sea Friends Song",
+  "tags": [
+    "sea animals",
+    "kids song",
+    "toddler learning",
+    "ocean creatures",
+    "children's music",
+    "education",
+    "preschool",
+    "marine life",
+    "fun learning",
+    "sea friends"
+  ],
+  "yt_description": "Learn about sea animals with Pip and friends. This song teaches toddlers about different sea creatures in a fun and engaging way. Your child will learn to recognize and name a few sea animals.\n\n🎵 Sea Friends Song\n\nHello\nLet's go\nTo the sea\n\nFish swim\nCrab crawls\nOctopus plays\n\nSea friends\nSo much fun\nLet's play\n\nSea friends\nSo much fun\nLet's play\n\nBye bye\nSea friends\nSee you\n\nBouncy Meadow — Kids Songs with Pip, Lulu & Bo\nAnimation and music created with AI tools, written and reviewed by a human.\n\n#Shorts #KidsSongs #seaanimals #kidssong #toddlerlearning",
+  "sections": [
+    {
+      "name": "Intro",
+      "seconds": 8.0,
+      "lines": [
+        "Hello",
+        "Let's go",
+        "To the sea"
+      ],
+      "caption": "SEA",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "beach"
+    },
+    {
+      "name": "Verse 1",
+      "seconds": 9.0,
+      "lines": [
+        "Fish swim",
+        "Crab crawls",
+        "Octopus plays"
+      ],
+      "caption": "FISH",
+      "cast": [
+        {
+          "name": "Bo",
+          "pose": "standing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "fish",
+          "color": "blue"
+        }
+      ],
+      "set": "ocean with coral and seaweed"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Sea friends",
+        "So much fun",
+        "Let's play"
+      ],
+      "caption": "SEA FRIENDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "dancing"
+        },
+        {
+          "name": "Lulu",
+          "pose": "dancing"
+        }
+      ],
+      "props": [
+        {
+          "kind": "octopus",
+          "color": "purple"
+        }
+      ],
+      "set": "a sunny beach with a pier"
+    },
+    {
+      "name": "Chorus",
+      "seconds": 10.0,
+      "lines": [
+        "Sea friends",
+        "So much fun",
+        "Let's play"
+      ],
+      "caption": "SEA FRIENDS",
+      "cast": [
+        {
+          "name": "Pip",
+          "pose": "jumping"
+        },
+        {
+          "name": "Bo",
+          "pose": "jumping"
+        }
+      ],
+      "props": [
+        {
+          "kind": "crab",
+          "color": "red"
+        }
+      ],
+      "set": "a rocky shoreline with sea stars"
+    },
+    {
+      "name": "Outro",
+      "seconds": 8.0,
+      "lines": [
+        "Bye bye",
+        "Sea friends",
+        "See you"
+      ],
+      "caption": "BYE",
+      "cast": [
+        {
+          "name": "Lulu",
+          "pose": "waving"
+        }
+      ],
+      "props": [],
+      "set": "beach"
+    }
+  ],
+  "telegram_file_id": "BAACAgIAAxkDAANYawABWn269R0taJAzzp-bA9Qq3-PUAAJDrgACRecAAUh3JhoTdAd07j0E",
+  "telegram_message_id": 88
+}
